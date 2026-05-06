@@ -19,7 +19,7 @@ O script está configurado para processar **200 notícias por execução**. Essa
 
 ---
 
-## 📂 Estrutura do Projeto
+## Estrutura do Projeto
 
 ```plaintext
 ├── data_llama-3.3-70b-versatile/
