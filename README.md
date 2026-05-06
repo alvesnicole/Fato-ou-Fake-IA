@@ -23,22 +23,22 @@ O script está configurado para processar **200 notícias por execução**. Essa
 
 ```plaintext
 ├── data_llama-3.3-70b-versatile/
-│   ├── data/                       # Diretório contendo as notícias
-│   ├── results/                    # Diretório onde os resultados serão gerados
-│   ├── .env                        # Configuração da chave da API
-│   ├── config.py                   # Configurações gerais do experimento
-│   ├── data_loader.py              # Carregamento e organização dos dados
-│   ├── engine.py                   # Interface de comunicação com a API
-│   └── main.py                     # Execução principal do experimento
+│   ├── data/                       # Notícias verdadeiras e falsas do experimento
+│   ├── results/                    # CSVs e matrizes geradas pelo modelo
+│   ├── .env                        # Chave de autenticação da API Groq
+│   ├── config.py                   # Modelos, caminhos e tamanho das amostras
+│   ├── data_loader.py              # Carregamento, balanceamento e preparação textual
+│   ├── engine.py                   # Classificação automática e controle de rate limits
+│   └── main.py                     # Execução, métricas e geração dos resultados
 │
 ├── data_qwen3-32b/
-│   ├── data/                       # Diretório contendo as notícias
-│   ├── results/                    # Diretório onde os resultados serão gerados
-│   ├── .env                        # Configuração da chave da API
-│   ├── config.py                   # Configurações gerais do experimento
-│   ├── data_loader.py              # Carregamento e organização dos dados
-│   ├── engine.py                   # Interface de comunicação com a API
-│   └── main.py                     # Execução principal do experimento
+│   ├── data/                       # Notícias verdadeiras e falsas do experimento
+│   ├── results/                    # CSVs e matrizes geradas pelo modelo
+│   ├── .env                        # Chave de autenticação da API Groq
+│   ├── config.py                   # Modelos, caminhos e tamanho das amostras
+│   ├── data_loader.py              # Carregamento, balanceamento e preparação textual
+│   ├── engine.py                   # Classificação automática e controle de rate limits
+│   └── main.py                     # Execução, métricas e geração dos resultados
 │
 └── README.md
 ```
