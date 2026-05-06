@@ -4,7 +4,7 @@ Este repositório contém um ambiente de testes para classificação de notícia
 
 O experimento foi estruturado para avaliar a precisão e a latência de diferentes modelos ao lidar com informações do cenário brasileiro.
 
-## 📊 O Dataset
+## O Dataset
 
 Para este experimento, selecionamos **400 notícias** extraídas do dataset *Fake.br-Corpus*.
 
@@ -43,7 +43,7 @@ O script está configurado para processar **200 notícias por execução**. Essa
 └── README.md
 ```
 
-## 🚀 Instalação
+## Instalação
 
 Ative seu ambiente virtual (`venv`) e instale as dependências:
 
@@ -51,7 +51,7 @@ Ative seu ambiente virtual (`venv`) e instale as dependências:
 pip install -r requirements.txt
 ```
 
-## 🔑 Configuração da API
+## Configuração da API
 
 Utilize arquivo `.env` na raiz do projeto:
 
@@ -59,7 +59,7 @@ Utilize arquivo `.env` na raiz do projeto:
 GROQ_API_KEY=sua_chave_aqui
 ```
 
-## ▶️ Execução
+## Execução
 
 Execute o experimento com:
 
@@ -67,7 +67,7 @@ Execute o experimento com:
 python main.py
 ```
 
-## 📈 Resultados
+## Resultados
 
 Ao final da execução, o sistema gera:
 
