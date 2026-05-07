@@ -90,7 +90,9 @@ O script está configurado para processar **200 notícias por execução**. Essa
 │   ├── engine.py                   # Classificação automática e controle de rate limits
 │   └── main.py                     # Execução, métricas e geração dos resultados
 │
-└── README.md
+├── README.md
+├── requirements.txt
+└── comparacao_modelos.ipynb
 ```
 
 ## Como Executar o Projeto
