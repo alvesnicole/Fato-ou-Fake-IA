@@ -4,6 +4,19 @@ Este repositório contém um ambiente de testes para classificação de notícia
 
 O experimento foi estruturado para avaliar a precisão e a latência de diferentes modelos ao lidar com informações do cenário brasileiro.
 
+## Tema/Problema Abordado
+
+O projeto aborda o problema da detecção automática de fake news utilizando Modelos de Linguagem de Grande Escala (LLMs). O foco principal é analisar a capacidade desses modelos em identificar notícias falsas e verdadeiras em português, considerando desempenho de classificação e tempo de resposta.
+
+## Objetivo do Trabalho
+
+O objetivo deste trabalho é avaliar a eficiência de diferentes LLMs na tarefa de classificação de notícias do dataset Fake.br-Corpus, medindo:
+
+- Precisão das classificações
+- Recall e F1-Score
+- Latência das respostas
+- Robustez em cenários reais de desinformação
+
 ## O Dataset
 
 Para este experimento, selecionamos **400 notícias** extraídas do dataset *Fake.br-Corpus*.
@@ -16,6 +29,43 @@ O script está configurado para processar **200 notícias por execução**. Essa
 
 - `llama-3.3-70b-versatile`
 - `qwen3-32b`
+
+---
+
+## Técnicas/Modelos Utilizados
+
+### Técnicas
+
+- Classificação textual supervisionada
+- Prompt Engineering
+- Avaliação automática de desempenho
+- Balanceamento de classes
+- Geração de matrizes de confusão
+
+### Modelos
+
+- `llama-3.3-70b-versatile`
+- `qwen3-32b`
+
+---
+
+## Bibliotecas e Ferramentas Empregadas
+
+### Bibliotecas Python
+
+- `pandas`
+- `scikit-learn`
+- `matplotlib`
+- `seaborn`
+- `python-dotenv`
+- `groq`
+
+### Ferramentas
+
+- API Groq
+- Fake.br-Corpus
+- Python 3
+- Ambiente virtual (`venv`)
 
 ---
 
@@ -43,7 +93,9 @@ O script está configurado para processar **200 notícias por execução**. Essa
 └── README.md
 ```
 
-## Instalação
+## Como Executar o Projeto
+
+### 1. Instalação das Dependências
 
 Ative seu ambiente virtual (`venv`) e instale as dependências:
 
@@ -51,15 +103,25 @@ Ative seu ambiente virtual (`venv`) e instale as dependências:
 pip install -r requirements.txt
 ```
 
-## Configuração da API
+### 2. Configuração da API
 
-Utilize arquivo `.env` na raiz do projeto:
+Crie um arquivo `.env` na raiz do projeto:
 
 ```env
 GROQ_API_KEY=sua_chave_aqui
 ```
 
-## Execução
+### 3. Organização dos Dados
+
+As notícias devem estar organizadas na pasta `data/`, separadas entre:
+
+```plaintext
+data/
+├── fake/
+└── true/
+```
+
+### 4. Execução
 
 Execute o experimento com:
 
@@ -81,3 +143,5 @@ Ao final da execução, o sistema gera:
   - Precisão (*Precision*)
   - Recall
   - F1-Score
+
+- Matrizes de confusão em formato `.png`
